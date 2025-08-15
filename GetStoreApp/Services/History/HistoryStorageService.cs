@@ -32,7 +32,8 @@ namespace GetStoreApp.Services.History
         private static List<TypeModel> TypeList { get; } =
         [
             new TypeModel { InternalName = "url", ShortName = "url" },
-            new TypeModel { InternalName = "ProductId", ShortName = "pid" }
+            new TypeModel { InternalName = "ProductId", ShortName = "pid" },
+            new TypeModel { InternalName = "PackageFamilyName", ShortName = "pid" }
         ];
 
         private static List<ChannelModel> ChannelList { get; } =

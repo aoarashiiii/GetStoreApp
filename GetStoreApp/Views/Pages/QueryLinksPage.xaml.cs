@@ -44,6 +44,8 @@ namespace GetStoreApp.Views.Pages
         private readonly string InfoBarSuccessString = ResourceService.GetLocalized("QueryLinks/InfoBarSuccess");
         private readonly string InfoBarWarningString = ResourceService.GetLocalized("QueryLinks/InfoBarWarning");
         private readonly string ProductIDString = ResourceService.GetLocalized("QueryLinks/ProductID");
+        private readonly string CategoryIDString = ResourceService.GetLocalized("QueryLinks/CategoryID");
+        private readonly string PackageFamilyNameString = ResourceService.GetLocalized("QueryLinks/PackageFamilyName");
         private readonly string RetailString = ResourceService.GetLocalized("QueryLinks/Retail");
         private readonly string RPString = ResourceService.GetLocalized("QueryLinks/RP");
         private readonly string SampleTitleString = ResourceService.GetLocalized("QueryLinks/SampleTitle");
@@ -263,7 +265,7 @@ namespace GetStoreApp.Views.Pages
             }
         }
 
-        private List<string> SampleLinkList { get; } = ["https://apps.microsoft.com/store/detail/9WZDNCRFJBMP", "9WZDNCRFJBMP",];
+        private List<string> SampleLinkList { get; } = ["https://apps.microsoft.com/store/detail/9WZDNCRFJBMP", "9WZDNCRFJBMP", "Microsoft.WindowsStore_8wekyb3d8bbwe", ": d58c3a5f-ca63-4435-842c-7814b5ff91b7"];
 
         public List<TypeModel> TypeList { get; } = [];
 
@@ -294,6 +296,18 @@ namespace GetStoreApp.Views.Pages
                 InternalName = "ProductId",
                 ShortName = "pid"
             });
+            TypeList.Add(new TypeModel
+            {
+                DisplayName = PackageFamilyNameString,
+                InternalName = "PackageFamilyName",
+                ShortName = "pfn"
+            });
+            TypeList.Add(new TypeModel
+            {
+                DisplayName = CategoryIDString,
+                InternalName = "CategoryID",
+                ShortName = "cid"
+            });
 
             ChannelList.Add(new ChannelModel
             {
@@ -321,7 +335,7 @@ namespace GetStoreApp.Views.Pages
             });
 
             SelectedType = TypeList[0];
-            SelectedChannel = ChannelList[3];
+            SelectedChannel = ChannelList[1];
             LinkText = string.Empty;
 
             InfoBarList.Add(new InfoBarModel

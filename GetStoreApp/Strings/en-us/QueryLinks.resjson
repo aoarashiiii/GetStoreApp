@@ -34,6 +34,8 @@
   "OptionsToolTip": "Select the options you want to use",
   "PackagedApp": "Packaged app",
   "ProductID": "ProductID",
+  "CategoryId": "CategoryId",
+  "PackageFamilyName": "PackageFamilyName",
   "QueryedAppDescription": "App description: ",
   "QueryedAppInfo": "App information",
   "QueryedAppName": "App name: ",

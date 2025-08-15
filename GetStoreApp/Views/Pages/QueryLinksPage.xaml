@@ -75,6 +75,18 @@
                                 IsChecked="{x:Bind x:Object.Equals(SelectedType.InternalName, TypeList[1].InternalName), Mode=OneWay}"
                                 Tag="{x:Bind TypeList[1]}"
                                 Text="{x:Bind TypeList[1].DisplayName}" />
+                            <RadioMenuFlyoutItem
+                                Click="{x:Bind OnTypeSelectClicked}"
+                                GroupName="TypeRadioGroup"
+                                IsChecked="{x:Bind x:Object.Equals(SelectedType.InternalName, TypeList[2].InternalName), Mode=OneWay}"
+                                Tag="{x:Bind TypeList[2]}"
+                                Text="{x:Bind TypeList[2].DisplayName}" />
+                            <RadioMenuFlyoutItem
+                                Click="{x:Bind OnTypeSelectClicked}"
+                                GroupName="TypeRadioGroup"
+                                IsChecked="{x:Bind x:Object.Equals(SelectedType.InternalName, TypeList[3].InternalName), Mode=OneWay}"
+                                Tag="{x:Bind TypeList[3]}"
+                                Text="{x:Bind TypeList[3].DisplayName}" />
                         </MenuFlyout>
                     </DropDownButton.Flyout>
                 </DropDownButton>

@@ -37,6 +37,8 @@
     <Win32Resource>GetStoreAppWebView.res</Win32Resource>
     <WindowsSdkPackageVersion>10.0.26100.71</WindowsSdkPackageVersion>
     <XmlResolverIsNetworkingEnabledByDefault>false</XmlResolverIsNetworkingEnabledByDefault>
+    <PublishTrimmed>False</PublishTrimmed>
+	  <PublishAot>False</PublishAot>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Platform)'=='x86'">

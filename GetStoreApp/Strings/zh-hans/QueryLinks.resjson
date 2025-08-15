@@ -34,6 +34,8 @@
   "OptionsToolTip": "选择您要使用的选项",
   "PackagedApp": "打包应用",
   "ProductID": "产品 ID",
+  "CategoryId": "序列号",
+  "PackageFamilyName": "应用包系列名",
   "QueryedAppDescription": "应用描述：",
   "QueryedAppInfo": "应用信息",
   "QueryedAppName": "应用名称：",

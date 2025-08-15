@@ -55,6 +55,8 @@
     <UserSecretsId>FF1007A3-37E5-4856-A3D5-765555830F81</UserSecretsId>
     <VisualStudioVersion>17.0</VisualStudioVersion>
     <WinUISDKReferences>false</WinUISDKReferences>
+	  <PublishTrimmed>False</PublishTrimmed>
+	  <PublishAot>False</PublishAot>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
     <AppxBundle>Always</AppxBundle>

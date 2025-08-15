@@ -25,7 +25,8 @@ namespace GetStoreApp.Services.Root
         private static List<TypeModel> TypeList { get; } =
         [
             new TypeModel { InternalName = "url", ShortName = "url" },
-            new TypeModel { InternalName = "ProductId", ShortName = "pid" }
+            new TypeModel { InternalName = "ProductId", ShortName = "pid" },
+            new TypeModel { InternalName = "PackageFamilyName", ShortName = "pfn" }
         ];
 
         private static List<ChannelModel> ChannelList { get; } =
